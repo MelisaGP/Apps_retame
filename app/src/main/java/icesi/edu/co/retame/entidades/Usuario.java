@@ -1,4 +1,4 @@
-package icesi.edu.co.retame.icesi.edu.co.retame.entidades;
+package icesi.edu.co.retame.entidades;
 
 /**
  * Created by JuanDavid on 23/4/2017.
