@@ -10,15 +10,15 @@ public class Usuario {
     public static final char TUTOR = 'T';
 
     private String nombre;
-    private String contraseña;
+    private String contrasenia;
     private String usuario;
     private char tipoUsuario;
     private int puntaje;
 
-    public Usuario(String nombre, String usuario, String contraseña, char tipoUsuario, int puntaje) {
+    public Usuario(String nombre, String usuario, String contrasenia, char tipoUsuario, int puntaje) {
         this.nombre = nombre;
         this.usuario = usuario;
-        this.contraseña = contraseña;
+        this.contrasenia = this.contrasenia;
         this.tipoUsuario = tipoUsuario;
         this.puntaje = puntaje;
     }
@@ -99,11 +99,11 @@ public class Usuario {
         this.puntaje = puntaje;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasenia() {
+        return contrasenia;
     }
 
     public void cambiarContraseña(String contraseña) {
-        this.contraseña = contraseña;
+        this.contrasenia = contraseña;
     }
 }
