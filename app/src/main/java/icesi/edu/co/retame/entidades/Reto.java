@@ -12,6 +12,8 @@ public class Reto {
     private List<Prueba> pruebas;
     private List<Usuario> usuarios;
 
+
+
     private String nombre;
     private String descripcionReto;
     private int numeroParticipantes;
@@ -23,6 +25,10 @@ public class Reto {
     public final static char MUY_DIFICIL= 'I';
 
     public Reto(String nombre, String descripcionReto, char nivelDificultad) {
+
+        this.nombre = nombre;
+        this.descripcionReto = descripcionReto;
+        this.nivelDificultad=nivelDificultad;
 
     }
 
@@ -43,4 +49,51 @@ public class Reto {
 
     }
 
+    public List<Prueba> getPruebas() {
+        return pruebas;
+    }
+
+    public void setPruebas(List<Prueba> pruebas) {
+        this.pruebas = pruebas;
+    }
+
+    public List<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(List<Usuario> usuarios) {
+        this.usuarios = usuarios;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcionReto() {
+        return descripcionReto;
+    }
+
+    public void setDescripcionReto(String descripcionReto) {
+        this.descripcionReto = descripcionReto;
+    }
+
+    public int getNumeroParticipantes() {
+        return numeroParticipantes;
+    }
+
+    public void setNumeroParticipantes(int numeroParticipantes) {
+        this.numeroParticipantes = numeroParticipantes;
+    }
+
+    public char getNivelDificultad() {
+        return nivelDificultad;
+    }
+
+    public void setNivelDificultad(char nivelDificultad) {
+        this.nivelDificultad = nivelDificultad;
+    }
 }

@@ -37,7 +37,12 @@ public class Usuario {
      * @param descripcion descripcion del grupo
      */
     public void crearGrupo(String nombreGrupo, String descripcion){
-        //TODO
+        if(tipoUsuario==Usuario.TUTOR){
+            //grupos.add()
+        }
+        else{
+
+        }
     }
 
     /**

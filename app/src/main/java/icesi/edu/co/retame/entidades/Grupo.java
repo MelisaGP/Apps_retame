@@ -1,6 +1,11 @@
 package icesi.edu.co.retame.entidades;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 import java.util.List;
+//import com.google.firebase.
 
 /**
  * Created by jdcm on 11/05/17.
@@ -16,6 +21,8 @@ public class Grupo {
     private int numeroParticipantes;
     private int codigo;
 
+    private DatabaseReference db= FirebaseDatabase.getInstance().getReference();
+
 
     public Grupo(String nombreGrupo, String descripcion){
 
@@ -24,21 +31,30 @@ public class Grupo {
 
     }
 
-    public boolean agregarUsuario(Usuario usuario){
+    public void agregarUsuario(Usuario usuario){
 
+        usuarios.add(usuario);
 
-
-        return false;
     }
 
-    public boolean agregarReto(String nombreReto, String descripcionReto){
+    public void agregarReto(Reto reto){//TODO
 
-        return false;
+        retos.add(reto);
+
     }
 
-    public Reto[] filtrarRetosDificultad(char tipoReto){
+    public List<Reto> filtrarRetosDificultad(char tipoReto){
 
-        return null;
+        List<Reto> lista = new ArrayList<>();
+        for(Reto reto : retos){
+
+            if(reto.getNivelDificultad()==tipoReto){
+                lista.add(reto);
+            }
+
+        }
+
+        return lista;
 
     }
 
