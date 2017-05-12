@@ -1,11 +1,16 @@
 package icesi.edu.co.retame.entidades;
 
+import java.util.List;
+
 /**
  * Created by jdcm on 4/05/17.
  */
 
 public class Reto {
 
+
+    private List<Prueba> pruebas;
+    private List<Usuario> usuarios;
 
     private String nombre;
     private String descripcionReto;
