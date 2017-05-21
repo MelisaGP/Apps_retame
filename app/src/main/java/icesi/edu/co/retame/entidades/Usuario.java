@@ -1,10 +1,14 @@
 package icesi.edu.co.retame.entidades;
 
+import java.util.List;
+
 /**
  * Created by JuanDavid on 23/4/2017.
  */
 
 public class Usuario {
+
+    private List<Grupo> grupos;
 
     public static final char ALUMNO = 'A';
     public static final char TUTOR = 'T';
@@ -33,7 +37,12 @@ public class Usuario {
      * @param descripcion descripcion del grupo
      */
     public void crearGrupo(String nombreGrupo, String descripcion){
-        //TODO
+        if(tipoUsuario==Usuario.TUTOR){
+            //grupos.add()
+        }
+        else{
+
+        }
     }
 
     /**
